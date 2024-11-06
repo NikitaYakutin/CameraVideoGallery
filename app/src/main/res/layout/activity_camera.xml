@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- ImageView для отображения сделанного снимка -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="Captured Image"
+        android:scaleType="centerCrop"
+        android:background="#E0E0E0" />
+
+    <!-- Кнопка для захвата изображения с камеры -->
+    <Button
+        android:id="@+id/button_take_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сделать снимок"
+        android:layout_marginTop="16dp" />
+
+    <!-- Кнопка для возврата на главную активность -->
+    <Button
+        android:id="@+id/button_back_to_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
